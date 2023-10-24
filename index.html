@@ -10,51 +10,57 @@
 <body>
    <div class="wrapper">
       <header class="header">
-         <a class="header__logo" href="#">
-            <img src="img/logotype-mobile.svg" width="100" height="84" alt="Седона">
-            <img src="img/logo.svg" width="186" height="96" alt="" aria-hidden="true">
-         </a>
+         <div class="header__container">
+            <a class="header__logo" href="#">
+               <img width="100" height="84" src="img/logotype-mobile.svg" alt="Седона">
+               <img width="186" height="96" src="img/logo.svg" alt="" aria-hidden="true">
+            </a>
 
-         <nav class="header__nav main-nav">
-            <button class="main-nav__toggle" type="button">
-               <span class="visually-hidden">Открыть меню</span>
-            </button>
+            <nav class="header__nav main-nav">
+               <button class="main-nav__toggle" type="button">
+                  <span class="visually-hidden">Открыть меню</span>
+               </button>
 
-            <ul class="main-nav__menu">
-               <li class="main-nav__item">
-                  <a class="main-nav__link" href="/">Главная</a>
-               </li>
-               <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Фото и видел</a>
-               </li>
-               <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Форма отзыва</a>
-               </li>
-               <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">HTML ACADEMY</a>
-               </li>
-            </ul>
-         </nav>
+               <ul class="main-nav__menu">
+                  <li class="main-nav__item">
+                     <a class="main-nav__link" href="/">Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                     <a class="main-nav__link" href="photo-and-video.html">Фото и видел</a>
+                  </li>
+                  <li class="main-nav__item">
+                     <a class="main-nav__link" href="form-reviews.html">Форма отзыва</a>
+                  </li>
+                  <li class="main-nav__item">
+                     <a class="main-nav__link" href="#">Каталог</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
       </header>
 
       <main class="main-page">
          <h1 class="visually-hidden">О Седоне.</h1>
-         <section class="main-page__promo promo">
+
+         <section class="main-page__section promo">
             <div class="promo__container">
-               <h2>Добро пожаловать в Седону.</h2>
+               <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
+               <img width="320" height="260" src="img/back-mobile.jpg" alt="Изображение гор Седоны.">
             </div>
          </section>
 
-         <section class="main-page__advantages advantages">
+         <section class="main-page__section advantages">
             <div class="advantages__container">
                <h2 class="visually-hidden">Преимущества Седоны.</h2>
                <p class="advantages__slogan subtitle">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
                <p class="advantages__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
                <ol class="advantages__list">
                   <li class="advantages__item">
                      <h3 class="advantages__subtitle subtitle subtitle--light">Настоящий городок</h3>
                      <p class="advantages__text text text--light">Седона не аттракцион для туристов, там течет своя
                         жизнь</p>
+                     <img width="320" height="260" src="img/catalog/photo-city@1x 1.png" alt="">
                      <ul class="advantages__services services">
                         <li class="services__item">
                            <h4 class="services__subtitle subtitle">Жилье</h4>
@@ -74,6 +80,7 @@
                      <h3 class="advantages__subtitle subtitle subtitle--light">Там есть мост дьявола</h3>
                      <p class="advantages__text text text--light">Да, по нему можно пройти! Если вы осмелитесь, конечно
                      </p>
+                     <img width="320" height="260" src="img/catalog/photo-bridge@1x 1.jpg" alt="">
                   </li>
                   <li class="advantages__item">
                      <h3 class="advantages__subtitle subtitle">Небольшая площадь</h3>
@@ -91,7 +98,7 @@
             </div>
          </section>
 
-         <section class="main-page__booking booking">
+         <section class="main-page__section booking">
             <h2 class="visually-hidden">Поиск гостиницы.</h2>
             <p class="booking__subtitle title">Заинтересовались?</p>
             <p class="booking__text text">Укажите предполагаемые датыпоездки, и мы покажем вам лучшие предложения
@@ -99,8 +106,9 @@
             <button class="booking__button button" type="button">Найти гостиницу</button>
          </section>
 
-         <section class="main-page__location location">
+         <section class="main-page__section location">
             <h2 class="visually-hidden">Место расположения Седоны.</h2>
+            <img src="img/map-mobile.jpg" alt="">
          </section>
 
       </main>
